@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		How to make image Gallery Using
+		HTML CSS and Javascript?
+	</title>
+
+	
+	<style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Yaldevi', sans-serif;
+        }
+        
+        h1 {
+           
+            font-size: 80px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 22px;
+        }
+        
+      
+        
+        .myProducts-gallery img{
+            height: 92px;
+            margin: 10px 0;
+            cursor: pointer;
+            display: block;
+            opacity: .5;
+        }
+        
+        .myProducts-gallery img:hover {
+            opacity: 1;
+        }
+        
+        .myProducts-gallery {
+            float: left;
+        }
+        
+        .myProducts {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            position: absolute;
+        }
+        
+        .image-container img {
+            height: 400px;
+            transition: transform 1s;
+        }
+        
+        .image-container img:hover{
+            transform: scale(1.5);
+            cursor: zoom-in;
+        }
+        
+        .image-container {
+            float: right;
+            padding: 10px;
+        }
+        </style>
+</head>
+
+<body>
+	<h1>Welcome to  Courses</h1>
+	<div class="myProducts">
+		<div class="myProducts-gallery">
+			<img src="A. P. J. Abdul Kalam.jpg.jpg"  style="width:85%"
+				onclick="myImageFunction(this)" >
+
+
+			<img src="images.jpg"  style="width:85%"
+				
+				onclick="myImageFunction(this)">
+
+
+			<img src="c++.jpg" style="width:85%"
+			
+				onclick="myImageFunction(this)">
+
+			<img src="c.jpg"  style="width:85%"
+			
+				onclick="myImageFunction(this)">
+		</div>
+
+		<div class="image-container">
+			<img id="img-Box" src="Best-Programming-Languages-for-Web-Development-2-1.jpg"
+
+				alt="click here">
+		</div>
+	</div>
+
+	<script>
+		function myImageFunction(productSmallImg) {
+			var productFullImg = document.getElementById("img-Box");
+			productFullImg.src = productSmallImg.src;
+		}
+	</script>
+</body>
+
+</html>

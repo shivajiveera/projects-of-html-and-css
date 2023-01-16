@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color:#fdcd3b ;
+            text-align:center;
+        }
+
+        form {
+			background-color: rgb(255, 255, 255);
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+        .control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+        button{
+        
+			background-color: yellowgreen;
+			border: 1px solid #777;
+			border-radius: 3px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		
+        }
+    </style>
+
+
+
+
+
+
+
+</head>
+<body>
+    <h1>CipherSchool Online Form </h1>
+
+    <form>
+        <div class="control">
+            <label>Name</label>
+
+            <input type = "text"
+             placeholder="Enter your name:">
+        </div>
+
+        <div class="control">
+            <label>Emali</label>
+
+            <input type="email" 
+            placeholder="Enter yor email">
+
+        </div>
+        <div class="control">
+            <label>age</label>
+
+            <input type="age" 
+            placeholder="Enter yor age">
+
+        </div>
+
+        <div class="control">
+            <label>Which option best describes you:- ?</label>
+            
+            <select>
+                <option >Student</option>
+                <option >intern</option>
+                <option >other</option>
+            </select>
+        </div>
+        
+        <div class="control">
+            <label>Would you recommend  CipherSchool to a friend? </label><br>
+            <input type="radio">No</input><br>
+            <input type="radio">yes</input><br>
+            <input type="radio">Maybe</input>
+        </div>
+
+        <div class="control">
+			<label>Languages and Frameworks known
+				<small>(Check all that apply)</small>
+			</label>
+			
+			<br>
+					
+				<input type="checkbox"
+                name="inp">C</input>
+		
+				<br>
+                <input type="checkbox"
+                name="inp">C++</input>
+			<br>
+				<input type="checkbox"
+					name="inp">C#</input>
+			<br>
+				<input type="checkbox"
+					name="inp">Java</input>
+		<br>
+				<input type="checkbox"
+					name="inp">Python</input>
+		<br>
+				<input type="checkbox"
+					name="inp">JavaScript</input>
+		<br>
+				<input type="checkbox"
+					name="inp">React</input>
+			<br>
+				<input type="checkbox"
+					name="inp">Angular</input>
+			<br>
+				<input type="checkbox"
+					name="inp">Django</input>
+		<br>
+				<input type="checkbox"
+					name="inp">Spring</input>
+		</div>
+        <div class="control">
+            <label for="comment" >
+                <b> Any comments or suggestions</b>
+             </label>
+           <br>
+           <br>
+             <textarea placeholder="Enter your comment here" style="font-family: inherit;
+             padding: 10px;
+             display: block;
+             width: 95%;"></textarea>
+        </div>
+
+
+
+        <button type="submit" value="submit">
+			Submit
+		</button>
+
+
+    </form>
+
+
+    
+</body>
+</html>
